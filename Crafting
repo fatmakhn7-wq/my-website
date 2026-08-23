@@ -1,6 +1,1427 @@
-<a
-  href="https://www.instagram.com/fatimagul.art/"
-  target="_blank"
-  class="instagram-button">
-  📷 Instagram: @fatimagul.art
-</a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Fatma Gul - Beautiful crochet crafts, handmade gifts and cozy accessories.">
+
+  <title>Fatma Gul | Crochet & Handmade</title>
+
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8f3;
+      color: #382e2b;
+      line-height: 1.6;
+    }
+
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+
+      background: rgba(255,248,243,0.96);
+
+      border-bottom: 1px solid #eadbd3;
+
+      padding: 16px 6%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      backdrop-filter: blur(10px);
+    }
+
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #a85f58;
+    }
+
+
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+
+
+    nav a {
+      font-size: 14px;
+      color: #5f5450;
+    }
+
+
+    nav a:hover {
+      color: #a85f58;
+    }
+
+
+    .top-button {
+      background: #382e2b;
+      color: white;
+
+      padding: 10px 18px;
+
+      border-radius: 30px;
+
+      font-size: 13px;
+    }
+
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 650px;
+
+      padding: 80px 8%;
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 50px;
+
+      align-items: center;
+    }
+
+
+    .eyebrow {
+      color: #a85f58;
+
+      font-size: 12px;
+
+      font-weight: bold;
+
+      letter-spacing: 3px;
+
+      margin-bottom: 18px;
+    }
+
+
+    .hero h1 {
+      font-family: Georgia, serif;
+
+      font-size: clamp(55px, 8vw, 100px);
+
+      line-height: 0.98;
+
+      letter-spacing: -3px;
+    }
+
+
+    .hero h1 span {
+      display: block;
+
+      color: #b86c63;
+
+      font-style: italic;
+    }
+
+
+    .hero-text {
+      max-width: 570px;
+
+      color: #6d625e;
+
+      font-size: 17px;
+
+      margin: 28px 0;
+    }
+
+
+    .buttons {
+      display: flex;
+
+      gap: 12px;
+
+      flex-wrap: wrap;
+    }
+
+
+    .btn {
+      display: inline-block;
+
+      padding: 14px 23px;
+
+      border-radius: 30px;
+
+      font-size: 14px;
+
+      font-weight: bold;
+    }
+
+
+    .btn-primary {
+      background: #d58d83;
+
+      color: white;
+    }
+
+
+    .btn-primary:hover {
+      background: #a85f58;
+    }
+
+
+    .btn-outline {
+      border: 1px solid #cdbbb2;
+    }
+
+
+    /* =========================
+       HERO ART
+    ========================= */
+
+    .hero-art {
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+    }
+
+
+    .art-circle {
+      width: 410px;
+
+      height: 410px;
+
+      border-radius: 50%;
+
+      background: #e8c4b5;
+
+      position: relative;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      box-shadow:
+        20px 25px 50px rgba(60,40,30,0.12);
+    }
+
+
+    .yarn {
+      font-size: 125px;
+    }
+
+
+    .flower {
+      position: absolute;
+
+      right: 45px;
+
+      bottom: 50px;
+
+      font-size: 65px;
+    }
+
+
+    .made-label {
+      position: absolute;
+
+      left: 10px;
+
+      top: 45px;
+
+      background: white;
+
+      padding: 15px 22px;
+
+      border-radius: 12px;
+
+      transform: rotate(-7deg);
+
+      text-align: center;
+
+      font-family: Georgia, serif;
+
+      box-shadow:
+        0 15px 30px rgba(50,30,20,0.12);
+    }
+
+
+    .made-label strong {
+      display: block;
+
+      color: #a85f58;
+
+      font-size: 21px;
+    }
+
+
+
+    /* =========================
+       SHOP
+    ========================= */
+
+    .shop {
+      padding: 90px 7%;
+
+      background: #fffdfb;
+    }
+
+
+    .section-title {
+      text-align: center;
+
+      margin-bottom: 45px;
+    }
+
+
+    .section-title h2 {
+      font-family: Georgia, serif;
+
+      font-size: 48px;
+
+      line-height: 1.1;
+
+      margin-bottom: 12px;
+    }
+
+
+    .section-title p:last-child {
+      color: #756a65;
+    }
+
+
+    .products {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 20px;
+    }
+
+
+    .product {
+      background: white;
+
+      border: 1px solid #eadbd3;
+
+      border-radius: 22px;
+
+      overflow: hidden;
+
+      transition: 0.3s;
+    }
+
+
+    .product:hover {
+      transform: translateY(-7px);
+
+      box-shadow:
+        0 20px 40px rgba(60,40,30,0.12);
+    }
+
+
+    .product-image {
+      height: 220px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-size: 90px;
+    }
+
+
+    .pink {
+      background: #f1d2c6;
+    }
+
+
+    .cream {
+      background: #eee1c9;
+    }
+
+
+    .green {
+      background: #d6dfd0;
+    }
+
+
+    .purple {
+      background: #ded1e1;
+    }
+
+
+    .product-info {
+      padding: 21px;
+    }
+
+
+    .badge {
+      background: #f0e4db;
+
+      padding: 6px 9px;
+
+      border-radius: 20px;
+
+      font-size: 9px;
+
+      letter-spacing: 1px;
+    }
+
+
+    .product-info h3 {
+      margin: 14px 0 7px;
+
+      font-size: 18px;
+    }
+
+
+    .product-info p {
+      color: #756a65;
+
+      font-size: 14px;
+
+      min-height: 65px;
+    }
+
+
+    .product-bottom {
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      margin-top: 17px;
+    }
+
+
+    .product-bottom strong {
+      font-size: 16px;
+    }
+
+
+    .order-link {
+      color: #a85f58;
+
+      font-weight: bold;
+
+      font-size: 14px;
+    }
+
+
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about {
+      padding: 100px 8%;
+
+      background: #e7d4c7;
+
+      display: grid;
+
+      grid-template-columns:
+        1.3fr .7fr;
+
+      gap: 25px;
+    }
+
+
+    .about-box,
+    .quote-box {
+      border-radius: 28px;
+
+      padding: 52px;
+    }
+
+
+    .about-box {
+      background: white;
+    }
+
+
+    .about-box h2 {
+      font-family: Georgia, serif;
+
+      font-size: 46px;
+
+      line-height: 1.1;
+    }
+
+
+    .about-box p {
+      color: #6e625d;
+
+      margin: 20px 0;
+    }
+
+
+    .quote-box {
+      background: #382e2b;
+
+      color: white;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+    }
+
+
+    .quote-mark {
+      color: #d59a91;
+
+      font-size: 90px;
+
+      line-height: 0.7;
+    }
+
+
+    .quote-box h3 {
+      font-family: Georgia, serif;
+
+      font-size: 27px;
+
+      line-height: 1.3;
+
+      margin-top: 25px;
+    }
+
+
+    .quote-box p {
+      color: #d7c7c1;
+
+      margin-top: 18px;
+    }
+
+
+
+    /* =========================
+       WHY US
+    ========================= */
+
+    .why {
+      padding: 90px 7%;
+
+      background: white;
+    }
+
+
+    .features {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 20px;
+    }
+
+
+    .feature {
+      padding: 35px;
+
+      border: 1px solid #eadbd3;
+
+      border-radius: 22px;
+    }
+
+
+    .feature-icon {
+      font-size: 35px;
+
+      color: #a85f58;
+    }
+
+
+    .feature h3 {
+      margin: 12px 0 7px;
+    }
+
+
+    .feature p {
+      color: #756a65;
+
+      font-size: 14px;
+    }
+
+
+
+    /* =========================
+       BUSINESS CONTACT
+    ========================= */
+
+    .contact {
+      margin: 0 6% 70px;
+
+      padding: 65px 7%;
+
+      background: #d58d83;
+
+      color: white;
+
+      border-radius: 30px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      gap: 35px;
+    }
+
+
+    .contact h2 {
+      font-family: Georgia, serif;
+
+      font-size: 48px;
+
+      line-height: 1.1;
+    }
+
+
+    .contact-description {
+      margin-top: 15px;
+
+      color: #ffe9df;
+    }
+
+
+    .contact-buttons {
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 12px;
+
+      min-width: 260px;
+    }
+
+
+    .contact-button {
+      background: white;
+
+      color: #382e2b;
+
+      padding: 15px 22px;
+
+      border-radius: 30px;
+
+      text-align: center;
+
+      font-weight: bold;
+
+      transition: .2s;
+    }
+
+
+    .contact-button:hover {
+      transform: translateY(-2px);
+
+      background: #fff2ed;
+    }
+
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 35px 7%;
+
+      border-top: 1px solid #eadbd3;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 20px;
+
+      color: #756a65;
+
+      font-size: 13px;
+    }
+
+
+    .footer-brand {
+      color: #382e2b;
+
+      font-weight: bold;
+    }
+
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      nav {
+        display: none;
+      }
+
+
+      .hero {
+        grid-template-columns: 1fr;
+
+        padding-top: 60px;
+      }
+
+
+      .products {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+
+      .contact {
+        flex-direction: column;
+
+        align-items: flex-start;
+      }
+
+    }
+
+
+
+    @media (max-width: 560px) {
+
+      header {
+        padding: 15px 5%;
+      }
+
+
+      .top-button {
+        padding: 9px 13px;
+      }
+
+
+      .hero {
+        padding: 60px 6%;
+      }
+
+
+      .hero h1 {
+        font-size: 62px;
+      }
+
+
+      .art-circle {
+        width: 300px;
+
+        height: 300px;
+      }
+
+
+      .yarn {
+        font-size: 90px;
+      }
+
+
+      .flower {
+        font-size: 48px;
+
+        right: 30px;
+
+        bottom: 40px;
+      }
+
+
+      .shop {
+        padding: 65px 6%;
+      }
+
+
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+
+      .section-title h2 {
+        font-size: 40px;
+      }
+
+
+      .about {
+        padding: 65px 6%;
+      }
+
+
+      .about-box,
+      .quote-box {
+        padding: 32px;
+      }
+
+
+      .about-box h2 {
+        font-size: 38px;
+      }
+
+
+      .contact {
+        margin: 0 4% 45px;
+
+        padding: 42px 28px;
+      }
+
+
+      .contact h2 {
+        font-size: 40px;
+      }
+
+
+      .contact-buttons {
+        width: 100%;
+
+        min-width: 0;
+      }
+
+
+      footer {
+        flex-direction: column;
+
+        padding: 28px 6%;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- NAVIGATION -->
+
+  <header>
+
+    <a href="#home" class="logo">
+      🧶 Fatma Gul
+    </a>
+
+
+    <nav>
+
+      <a href="#home">
+        Home
+      </a>
+
+      <a href="#shop">
+        Shop
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+    </nav>
+
+
+    <a href="#shop"
+       class="top-button">
+      Shop Now
+    </a>
+
+  </header>
+
+
+
+  <!-- HERO -->
+
+  <section id="home" class="hero">
+
+
+    <div>
+
+      <p class="eyebrow">
+        HANDMADE • CROCHET • BEAUTIFUL
+      </p>
+
+
+      <h1>
+        Little Loops,
+        <span>Big Love.</span>
+      </h1>
+
+
+      <p class="hero-text">
+        Welcome to Fatma Gul — your cozy destination
+        for beautiful crochet crafts, thoughtful gifts
+        and charming handmade-inspired pieces.
+      </p>
+
+
+      <div class="buttons">
+
+        <a href="#shop"
+           class="btn btn-primary">
+          Explore Collection →
+        </a>
+
+
+        <a href="#about"
+           class="btn btn-outline">
+          Our Story
+        </a>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- HERO IMAGE STYLE -->
+
+    <div class="hero-art">
+
+      <div class="art-circle">
+
+        <div class="yarn">
+          🧶
+        </div>
+
+
+        <div class="flower">
+          🌸
+        </div>
+
+
+        <div class="made-label">
+
+          Handmade with
+
+          <strong>
+            LOVE
+          </strong>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- SHOP -->
+
+  <section id="shop"
+           class="shop">
+
+
+    <div class="section-title">
+
+      <p class="eyebrow">
+        THE COLLECTION
+      </p>
+
+
+      <h2>
+        Favorites for Every Day
+      </h2>
+
+
+      <p>
+        Beautiful pieces for yourself,
+        your home and someone special.
+      </p>
+
+    </div>
+
+
+
+    <div class="products">
+
+
+      <!-- PRODUCT 1 -->
+
+      <div class="product">
+
+        <div class="product-image pink">
+          👜
+        </div>
+
+
+        <div class="product-info">
+
+          <span class="badge">
+            BESTSELLER
+          </span>
+
+
+          <h3>
+            Cozy Crochet Tote
+          </h3>
+
+
+          <p>
+            A stylish and practical crochet-inspired
+            tote for everyday essentials.
+          </p>
+
+
+          <div class="product-bottom">
+
+            <strong>
+              PKR 2,499
+            </strong>
+
+
+            <a class="order-link"
+               href="mailto:fatmakhn7@gmail.com?subject=Order - Cozy Crochet Tote">
+              Order →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PRODUCT 2 -->
+
+      <div class="product">
+
+        <div class="product-image cream">
+          🌼
+        </div>
+
+
+        <div class="product-info">
+
+          <span class="badge">
+            NEW
+          </span>
+
+
+          <h3>
+            Bloom Crochet Pouch
+          </h3>
+
+
+          <p>
+            A cute little pouch for accessories,
+            makeup and everyday essentials.
+          </p>
+
+
+          <div class="product-bottom">
+
+            <strong>
+              PKR 1,499
+            </strong>
+
+
+            <a class="order-link"
+               href="mailto:fatmakhn7@gmail.com?subject=Order - Bloom Crochet Pouch">
+              Order →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PRODUCT 3 -->
+
+      <div class="product">
+
+        <div class="product-image green">
+          🧸
+        </div>
+
+
+        <div class="product-info">
+
+          <span class="badge">
+            GIFT IDEA
+          </span>
+
+
+          <h3>
+            Mini Crochet Buddy
+          </h3>
+
+
+          <p>
+            A cute crochet-style gift for
+            friends, family and loved ones.
+          </p>
+
+
+          <div class="product-bottom">
+
+            <strong>
+              PKR 1,799
+            </strong>
+
+
+            <a class="order-link"
+               href="mailto:fatmakhn7@gmail.com?subject=Order - Mini Crochet Buddy">
+              Order →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PRODUCT 4 -->
+
+      <div class="product">
+
+        <div class="product-image purple">
+          🌸
+        </div>
+
+
+        <div class="product-info">
+
+          <span class="badge">
+            LOVELY
+          </span>
+
+
+          <h3>
+            Flower Coaster Set
+          </h3>
+
+
+          <p>
+            Pretty crochet-inspired flower
+            coasters for your home.
+          </p>
+
+
+          <div class="product-bottom">
+
+            <strong>
+              PKR 1,299
+            </strong>
+
+
+            <a class="order-link"
+               href="mailto:fatmakhn7@gmail.com?subject=Order - Flower Coaster Set">
+              Order →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ABOUT -->
+
+  <section id="about"
+           class="about">
+
+
+    <div class="about-box">
+
+      <p class="eyebrow">
+        ABOUT FATMA GUL
+      </p>
+
+
+      <h2>
+        Made for people
+        who love little details.
+      </h2>
+
+
+      <p>
+        Welcome to Fatma Gul — a cozy online
+        destination for crochet crafts,
+        beautiful gifts and charming everyday pieces.
+      </p>
+
+
+      <p>
+        We believe small handmade details can
+        make ordinary moments feel special.
+      </p>
+
+
+      <a href="#contact"
+         class="btn btn-primary">
+        Contact Fatma Gul →
+      </a>
+
+    </div>
+
+
+
+    <div class="quote-box">
+
+      <div class="quote-mark">
+        “
+      </div>
+
+
+      <h3>
+        Small details can make
+        ordinary days special.
+      </h3>
+
+
+      <p>
+        — Fatma Gul
+      </p>
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- WHY US -->
+
+  <section class="why">
+
+
+    <div class="section-title">
+
+      <p class="eyebrow">
+        WHY SHOP WITH US
+      </p>
+
+
+      <h2>
+        Simple. Warm. Thoughtful.
+      </h2>
+
+    </div>
+
+
+
+    <div class="features">
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          ♡
+        </div>
+
+
+        <h3>
+          Carefully Selected
+        </h3>
+
+
+        <p>
+          Beautiful products selected
+          with style and care.
+        </p>
+
+      </div>
+
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          ✦
+        </div>
+
+
+        <h3>
+          Easy Ordering
+        </h3>
+
+
+        <p>
+          Choose your favorite item
+          and contact us easily.
+        </p>
+
+      </div>
+
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          ☀
+        </div>
+
+
+        <h3>
+          Friendly Support
+        </h3>
+
+
+        <p>
+          Have a question? Contact
+          Fatma Gul anytime by email.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- BUSINESS CONTACT -->
+
+  <section id="contact"
+           class="contact">
+
+
+    <div>
+
+      <p class="eyebrow">
+        LET'S CONNECT
+      </p>
+
+
+      <h2>
+        Bring a little
+        handmade joy home.
+      </h2>
+
+
+      <p class="contact-description">
+        For orders, product questions,
+        collaborations or business enquiries,
+        contact Fatma Gul.
+      </p>
+
+    </div>
+
+
+
+    <div class="contact-buttons">
+
+
+      <!-- EMAIL -->
+
+      <a
+        class="contact-button"
+        href="mailto:fatmakhn7@gmail.com?subject=Fatma Gul Business Enquiry">
+
+        ✉️
+        fatmakhn7@gmail.com
+
+      </a>
+
+
+      <!-- INSTAGRAM -->
+
+      <a
+        class="contact-button"
+        href="https://www.instagram.com/fatimagul.art/"
+        target="_blank"
+        rel="noopener">
+
+        📷
+        Instagram: @fatimagul.art
+
+      </a>
+
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-brand">
+      🧶 Fatma Gul
+      — Crochet & Handmade
+    </div>
+
+
+    <div>
+      © 2026 Fatma Gul
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>
