@@ -6,67 +6,122 @@
   <title>Fatima Gul | Artistic Visionary</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Georgia', serif;
       margin: 0;
       padding: 0;
       background-color: #faf8f5;
       color: #2c2c2c;
-      text-align: center;
     }
     header {
-      padding: 60px 20px 30px;
+      text-align: center;
+      padding: 50px 20px 20px;
     }
     h1 {
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       color: #1a1a1a;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       letter-spacing: 1px;
     }
-    p.intro {
+    p.subtitle {
       font-size: 1.1rem;
-      max-width: 600px;
-      margin: 0 auto 30px;
-      line-height: 1.6;
-      color: #555;
+      color: #777;
+      font-style: italic;
+      margin-bottom: 30px;
     }
-    .gallery-title {
-      font-size: 1.5rem;
-      margin-top: 40px;
-      color: #333;
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
     }
-    .card {
+    .art-card {
       background: #ffffff;
-      max-width: 500px;
-      margin: 20px auto;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .art-image {
+      flex: 1 1 400px;
+      max-width: 100%;
+    }
+    .art-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .art-content {
+      flex: 1 1 350px;
+      padding: 35px;
+      box-sizing: border-box;
+    }
+    .art-title {
+      font-size: 1.8rem;
+      color: #111;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    .art-quote {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #444;
+      border-left: 3px solid #e07a5f;
+      padding-left: 15px;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .art-description {
+      font-size: 0.98rem;
+      line-height: 1.6;
+      color: #666;
     }
     .footer {
-      margin-top: 50px;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #888;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.85rem;
+      color: #999;
+      font-family: sans-serif;
+    }
+    @media (max-width: 768px) {
+      .art-card {
+        flex-direction: column;
+      }
+      .art-content {
+        padding: 25px;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Fatima Gul | Contemporary Art & Visual Storytelling</h1>
-    <p class="intro">Exploring the intersection of vibrant color, human emotion, and creative expression through a unique artistic perspective.</p>
+    <h1>Hi, I'm Fatima Gul</h1>
+    <p class="subtitle">Contemporary Artist & Visual Storyteller</p>
   </header>
 
-  <div class="card">
-    <div class="gallery-title">🎨 Art & Design Portfolio</div>
-    <p>Welcome to my visual archive. More artwork, sketches, and creative projects coming soon!</p>
+  <div class="container">
+    <div class="art-card">
+      <div class="art-image">
+        <img src="c330b67daeee989eca8d8a998ce4e.jpg" alt="Fatima Gul Creative Art">
+      </div>
+      <div class="art-content">
+        <h2 class="art-title">Symphony of Perception</h2>
+        <div class="art-quote">
+          "Art is not just what you see, but the lens through which you experience the soul’s hidden colors."
+        </div>
+        <p class="art-description">
+          Welcome to my creative realm! This piece merges classical sculpture, digital photography, and exploding color pigments—symbolizing how traditional art evolves into modern vision. Every brushstroke and camera lens tells a story of imagination breaking free from reality.
+        </p>
+      </div>
+    </div>
   </div>
 
   <div class="footer">
-    © 2026 Fatima Gul. All rights reserved.
+    © 2026 Fatima Gul • Crafted with Creativity
   </div>
 
 </body>
 </html>
-
-
