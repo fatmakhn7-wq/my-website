@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FatimaGul - Handmade crochet crafts, gifts and custom creations.">
+  <title>FatimaGul | Handmade Crochet</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf7;
+      color: #3d2b25;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #9a5c63;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #3d2b25;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #b76e79;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 70px 8%;
+      background: linear-gradient(135deg, #fff5ef, #f8e6e1);
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 75px);
+      line-height: 1.05;
+      color: #75434b;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 25px;
+      margin-bottom: 15px;
+      color: #9a5c63;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #604b45;
+    }
+
+    .buttons a {
+      display: inline-block;
+      padding: 13px 23px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .primary {
+      background: #9a5c63;
+      color: white;
+    }
+
+    .secondary {
+      border: 2px solid #9a5c63;
+      color: #9a5c63;
+    }
+
+    .hero-art {
+      width: 390px;
+      height: 390px;
+      border-radius: 50%;
+      background: #ead0ca;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 130px;
+      box-shadow: 0 20px 45px rgba(100,60,60,.15);
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      color: #75434b;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #76625d;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 7px 25px rgba(80,50,40,.08);
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+    }
+
+    .product-img {
+      height: 210px;
+      background: #f1ddd7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 80px;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      color: #75434b;
+      margin-bottom: 7px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #a65f68;
+      margin: 10px 0;
+    }
+
+    .order-btn {
+      display: inline-block;
+      background: #9a5c63;
+      color: white;
+      text-decoration: none;
+      padding: 9px 17px;
+      border-radius: 20px;
+      margin-top: 5px;
+    }
+
+    .about {
+      background: #f8eae5;
+    }
+
+    .about-box {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .feature {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 7px 20px rgba(70,40,30,.07);
+    }
+
+    .feature-icon {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    .custom {
+      background: #fff;
+    }
+
+    .custom-box {
+      max-width: 900px;
+      margin: auto;
+      background: #f9eee9;
+      padding: 45px;
+      border-radius: 25px;
+      text-align: center;
+    }
+
+    .custom-box h2 {
+      color: #75434b;
+      margin-bottom: 15px;
+      font-size: 35px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 35px;
+    }
+
+    .step {
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+    }
+
+    .step span {
+      display: block;
+      font-size: 35px;
+      color: #9a5c63;
+      font-weight: bold;
+    }
+
+    .earning {
+      background: #75434b;
+      color: white;
+      text-align: center;
+    }
+
+    .earning h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .earning p {
+      max-width: 750px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    .contact {
+      background: #fff8f5;
+    }
+
+    .contact-box {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .contact-item {
+      margin: 15px 0;
+      font-size: 18px;
+    }
+
+    .contact-item a {
+      color: #9a5c63;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #3d2b25;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    footer a {
+      color: #ffdcd5;
+      text-decoration: none;
+    }
+
+    .social {
+      margin: 15px 0;
+      font-size: 18px;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-art {
+        width: 280px;
+        height: 280px;
+        font-size: 90px;
+      }
+
+      .products {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .features,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 55px 5%;
+      }
+
+      .custom-box {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">FatimaGul</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#custom">Custom</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+  <div class="hero-text">
+    <h2>Handmade With Love 🧶</h2>
+
+    <h1>FatimaGul</h1>
+
+    <p>
+      Beautiful handmade crochet crafts, cute gifts and custom creations
+      made with care. Discover something special for yourself or someone you love.
+    </p>
+
+    <div class="buttons">
+      <a class="primary" href="#shop">Shop Collection</a>
+      <a class="secondary" href="#custom">Custom Order</a>
+    </div>
+  </div>
+
+  <div class="hero-art">
+    🧶
+  </div>
+
+</section>
+
+
+<!-- SHOP -->
+<section id="shop">
+
+  <div class="section-title">
+    <h2>Our Crochet Collection</h2>
+    <p>Handmade pieces created specially for you.</p>
+  </div>
+
+  <div class="products">
+
+    <div class="card">
+      <div class="product-img">🌸</div>
+      <div class="card-content">
+        <h3>Crochet Flowers</h3>
+        <p>Beautiful handmade flowers for gifts and decoration.</p>
+        <div class="price">Starting from PKR 500</div>
+        <a class="order-btn" href="mailto:fatmakhn7@gmail.com?subject=Crochet Flowers Order">
+          Order Now
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="product-img">👜</div>
+      <div class="card-content">
+        <h3>Crochet Bags</h3>
+        <p>Stylish handmade bags made with beautiful crochet work.</p>
+        <div class="price">Starting from PKR 1,500</div>
+        <a class="order-btn" href="mailto:fatmakhn7@gmail.com?subject=Crochet Bag Order">
+          Order Now
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="product-img">🧸</div>
+      <div class="card-content">
+        <h3>Crochet Amigurumi</h3>
+        <p>Cute handmade crochet characters and gifts.</p>
+        <div class="price">Starting from PKR 1,000</div>
+        <a class="order-btn" href="mailto:fatmakhn7@gmail.com?subject=Amigurumi Order">
+          Order Now
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="product-img">🎀</div>
+      <div class="card-content">
+        <h3>Accessories</h3>
+        <p>Handmade crochet accessories for everyday style.</p>
+        <div class="price">Starting from PKR 400</div>
+        <a class="order-btn" href="mailto:fatmakhn7@gmail.com?subject=Crochet Accessories Order">
+          Order Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+  <div class="section-title">
+    <h2>About FatimaGul</h2>
+  </div>
+
+  <div class="about-box">
+    <p>
+      Welcome to <strong>FatimaGul</strong> — a small handmade crochet brand
+      created with creativity, patience and love.
+      Every piece is carefully crafted to bring a warm handmade feeling to your life.
+    </p>
+
+    <div class="features">
+
+      <div class="feature">
+        <div class="feature-icon">🧶</div>
+        <h3>Handmade</h3>
+        <p>Every creation is made with care and attention.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">🎁</div>
+        <h3>Perfect Gifts</h3>
+        <p>Special handmade gifts for birthdays and special occasions.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">✨</div>
+        <h3>Custom Designs</h3>
+        <p>Request your own colors, designs and ideas.</p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<!-- CUSTOM ORDERS -->
+<section class="custom" id="custom">
+
+  <div class="custom-box">
+
+    <h2>Want Something Custom? 💕</h2>
+
+    <p>
+      Have your own crochet idea?
+      Tell us what you want and we can create a handmade piece specially for you.
+    </p>
+
+    <div class="steps">
+
+      <div class="step">
+        <span>01</span>
+        <h3>Choose</h3>
+        <p>Tell us your product and preferred design.</p>
+      </div>
+
+      <div class="step">
+        <span>02</span>
+        <h3>Customize</h3>
+        <p>Choose colors, size and special details.</p>
+      </div>
+
+      <div class="step">
+        <span>03</span>
+        <h3>Receive</h3>
+        <p>Your handmade creation is prepared for you.</p>
+      </div>
+
+    </div>
+
+    <br>
+
+    <a class="order-btn"
+       href="mailto:fatmakhn7@gmail.com?subject=Custom Crochet Order">
+       Start Custom Order
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- BUSINESS / EARNING -->
+<section class="earning">
+
+  <h2>Made to Sell. Made to Love. 💕</h2>
+
+  <p>
+    FatimaGul is a growing handmade crochet business.
+    We offer ready-made products, personalized orders and gift creations.
+    Our goal is to make beautiful handmade products available to customers
+    locally and worldwide.
+  </p>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+  <div class="section-title">
+    <h2>Let's Create Something Beautiful</h2>
+    <p>Have a question or want to place an order?</p>
+  </div>
+
+  <div class="contact-box">
+
+    <div class="contact-item">
+      📧 Email:
+      <a href="mailto:fatmakhn7@gmail.com">
+        fatmakhn7@gmail.com
+      </a>
+    </div>
+
+    <div class="contact-item">
+      📸 Instagram:
+      <a href="https://www.instagram.com/fatimagul.art/"
+         target="_blank">
+        @fatimagul.art
+      </a>
+    </div>
+
+    <div class="contact-item">
+      🧶 Custom Orders Available
+    </div>
+
+    <br>
+
+    <a class="primary buttons"
+       href="mailto:fatmakhn7@gmail.com?subject=FatimaGul Order Inquiry">
+       Contact & Order
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+  <h2>FatimaGul</h2>
+
+  <p>Handmade Crochet • Creative Gifts • Custom Creations</p>
+
+  <div class="social">
+    📸
+    <a href="https://www.instagram.com/fatimagul.art/"
+       target="_blank">
+       Instagram @fatimagul.art
+    </a>
+  </div>
+
+  <p>
+    📧
+    <a href="mailto:fatmakhn7@gmail.com">
+      fatmakhn7@gmail.com
+    </a>
+  </p>
+
+  <br>
+
+  <p>© 2026 FatimaGul. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
